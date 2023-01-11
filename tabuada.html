@@ -1,5 +1,22 @@
 <!DOCTYPE html>
 <meta charset="UTF-8">
 <script>
-    
+    function pulaLinha(){
+        document.write("<br><br>");
+    }
+    function mostra(frase){
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var multiplicador = parseInt(prompt("Taboada de qual número você quer calcular?"));
+    var contador = 0;
+    mostra("Esta é a taboada do" + multiplicador);
+    while(contador <= 10){
+       
+        var resultado = multiplicador * contador;
+        mostra(multiplicador +" * "+ contador + " = " + resultado);
+        contador += 1
+    }
+    mostra("FIM!") 
 </script>
