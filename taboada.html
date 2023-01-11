@@ -10,13 +10,10 @@
     }
 
     var multiplicador = parseInt(prompt("Taboada de qual número você quer calcular?"));
-    var contador = 0;
     mostra("Esta é a taboada do" + multiplicador);
-    while(contador <= 10){
-       
+    for(contador = 0;contador <= 10;contador++){
         var resultado = multiplicador * contador;
         mostra(multiplicador +" * "+ contador + " = " + resultado);
-        contador += 1
     }
     mostra("FIM!") 
 </script>
