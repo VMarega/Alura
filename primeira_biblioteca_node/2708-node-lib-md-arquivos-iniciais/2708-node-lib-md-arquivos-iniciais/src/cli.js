@@ -3,7 +3,7 @@ import fs from 'fs';
 import pegaArquivo from "./index.js";
 import listaValidada from "./http-validacao.js";
 
-const caminho = process.argv;
+const caminho = process.argv
 
 async function imprimeLista (valida, resultado, identificador = ''){
 
