@@ -6,8 +6,13 @@ botaoBuscar.addEventListener("click", ()=>{
     xhr.open("GET", "https://raw.githubusercontent.com/loresgarcia/Pacientes-API/master/pacientes.json");
 
     xhr.addEventListener("load", ()=>{
-        console.log(xhr.responseText);
-    });
+        let resposta = xhr.responseText;
+        let pacientesJSON = JSON.parse(resposta); 
+        
+        pacientesJSON.forEach((paciente)=>{
+            adicionaPacienteNaTabela(paciente);
+        })
+        });
 
     xhr.send();
 
