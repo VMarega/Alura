@@ -22,4 +22,4 @@ function exibeChuteNaTela(chute){
     `
 }
 
-recognition.addEventListener('end', ()=> recognition.star());
+recognition.addEventListener('end', ()=> recognition.start());
